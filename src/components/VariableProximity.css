@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'TT Commons Pro';
+    src: url('/TT_Commons_Pro_VF_Trial.ttf') format('truetype');
+    font-weight: 100 900;
+    /* range for weight axis */
+    font-style: normal;
+    font-display: swap;
+}
+
+.variable-proximity {
+    font-family: 'TT Commons Pro', sans-serif;
+    font-variation-settings: 'wght' 400, 'opsz' 9;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

@@ -1,0 +1,724 @@
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('/TT_Commons_Pro_VF_Trial.ttf') format('truetype');
+  font-weight: 100 900;
+  /* for variable font weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'TT Commons Pro', sans-serif;
+}
+
+h1 {
+  font-family: 'TT Commons Pro', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: 'TT Commons Pro', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  z-index: 1;
+}
+
+h3 {
+  font-family: 'TT Commons Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.light-text {
+  font-weight: 300;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  /* scroll-behavior: smooth; */
+  overscroll-behavior: none;
+  /* Add a base background that will be animated */
+  background-color: #ccc;
+  position: relative;
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: sans-serif;
+  color: black;
+  scroll-snap-stop: always;
+
+
+  /* Remove individual background colors since we're using the container background */
+
+}
+
+.page-child {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: sans-serif;
+  color: black;
+  scroll-snap-stop: always;
+  /* Remove individual background colors since we're using the container background */
+  background: transparent;
+}
+
+
+
+/* Remove all the individual page background colors */
+.page:nth-child(1) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(2) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(3) {
+  /* background: #000; - removed */
+}
+
+.page:nth-child(4) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(5) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(6) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(7) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(8) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(9) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(10) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(11) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(12) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(13) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(14) {
+  /* background: #ccc; - removed */
+}
+
+.page:nth-child(15) {
+  /* background: #ccc; - removed */
+}
+
+.dot {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+}
+
+.title-screen {
+  font-weight: 400;
+}
+
+.page-two {
+  font-family: 'TT Commons Pro', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  width: 80%;
+}
+
+.page-with-videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  gap: 32px;
+}
+
+.video-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px;
+  margin-left: 6px;
+  max-width: 540px;
+  color: white;
+  z-index: 10;
+  font-family: 'TT Commons Pro', sans-serif;
+  text-align: left;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 540px;
+  mix-blend-mode: screen;
+  z-index: 5;
+}
+
+.video-grid video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.faulty-terminal-container {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  filter: blur(0px);
+}
+
+
+.framework-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.framework-title {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  max-width: 800px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 16px;
+}
+
+
+
+
+.simple-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-text {
+  max-width: 650px;
+  margin: 0;
+  /* Remove default margin to avoid gap */
+  padding-top: 20px
+}
+
+.page-image {
+  padding-top: 32px;
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  margin-top: 0;
+  /* Ensures no gap between text and image */
+}
+
+.questions {
+  padding: 200px
+}
+
+.questions h1 {
+  font-size: 40px;
+}
+
+.map-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.map-container {
+  position: relative;
+}
+
+.map-image {
+  width: 500px;
+  /* adjust according to your image dimensions */
+  height: auto;
+  /* animation: float-six-image 4s linear infinite; */
+}
+
+
+.label {
+  position: absolute;
+  font-weight: 500;
+}
+
+
+
+@keyframes float-psychogeography {
+
+  0%,
+  100% {
+    transform: translate(-45%, -50%) translateY(0px) rotate(0deg);
+  }
+
+  33% {
+    transform: translate(-45%, -50%) translateY(-4px) rotate(0.3deg);
+  }
+
+  66% {
+    transform: translate(-45%, -50%) translateY(2px) rotate(-0.2deg);
+  }
+}
+
+@keyframes float-urban-exploration {
+
+  0%,
+  100% {
+    transform: translate(46%, -50%) translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(46%, -50%) translateY(-6px) rotate(-0.4deg);
+  }
+
+  75% {
+    transform: translate(46%, -50%) translateY(4px) rotate(0.3deg);
+  }
+}
+
+@keyframes float-serendipity {
+
+  0%,
+  100% {
+    transform: translate(15%, -35%) translateY(0px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(15%, -35%) translateY(-2px) rotate(0.5deg);
+  }
+
+  80% {
+    transform: translate(15%, -35%) translateY(6px) rotate(-0.1deg);
+  }
+}
+
+@keyframes float-cognitive-map {
+
+  0%,
+  100% {
+    transform: translate(-33%, -35%) translateY(0px) rotate(0deg);
+  }
+
+  30% {
+    transform: translate(-33%, -35%) translateY(4px) rotate(0.2deg);
+  }
+
+  70% {
+    transform: translate(-33%, -35%) translateY(-4px) rotate(-0.4deg);
+  }
+}
+
+@keyframes float-situationist-mapping {
+
+  0%,
+  100% {
+    transform: translate(-50%, 0%) translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-50%, 0%) translateY(5px) rotate(0.6deg);
+  }
+
+  80% {
+    transform: translate(-50%, 0%) translateY(2px) rotate(-0.3deg);
+  }
+}
+
+@keyframes float-algorithmic-imagination {
+
+  0%,
+  100% {
+    transform: translate(-50%, -60%) translateY(0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-50%, -60%) translateY(2px) rotate(-0.3deg);
+  }
+
+  50% {
+    transform: translate(-50%, -60%) translateY(-2px) rotate(0.4deg);
+  }
+
+}
+
+@keyframes float-six-image {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translateY(1px) rotate(-0.6deg);
+  }
+
+  60% {
+    transform: translateY(-2px) rotate(0.3deg);
+  }
+
+}
+
+
+
+/* Position each label according to your image endpoints */
+.psychogeography {
+  bottom: 25%;
+  left: 0%;
+  transform: translate(-45%, -50%);
+  animation: float-psychogeography 4s linear infinite;
+}
+
+.urban-exploration {
+  bottom: 25%;
+  right: 0%;
+  transform: translate(46%, -50%);
+  animation: float-urban-exploration 4s linear infinite;
+}
+
+.serendipity {
+  top: 25%;
+  right: 0%;
+  transform: translate(15%, -35%);
+  animation: float-serendipity 4s linear infinite;
+}
+
+.cognitive-map {
+  top: 25%;
+  left: 0%;
+  transform: translate(-33%, -35%);
+  animation: float-cognitive-map 4s linear infinite;
+}
+
+.situationist-mapping {
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  animation: float-situationist-mapping 4s linear infinite;
+}
+
+.algorithmic-imagination {
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  animation: float-algorithmic-imagination 4s linear infinite;
+}
+
+.responsive-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.phrase-1 {
+  animation: float-phrase-1 7s linear infinite;
+}
+
+@keyframes float-phrase-1 {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translateY(-5px) rotate(-0.2deg);
+  }
+
+  60% {
+    transform: translateY(4px) rotate(0.2deg);
+  }
+}
+
+.phrase-2 {
+  animation: float-phrase-2 6s linear infinite;
+}
+
+@keyframes float-phrase-2 {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translateY(4px) rotate(-0.2deg);
+  }
+
+  60% {
+    transform: translateY(-6px) rotate(0.1deg);
+  }
+}
+
+.phrase-3 {
+  animation: float-phrase-3 9s linear infinite;
+}
+
+@keyframes float-phrase-3 {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translateY(-6px) rotate(-0.1deg);
+  }
+
+  60% {
+    transform: translateY(4px) rotate(0.2deg);
+  }
+}
+
+
+.parallax-image {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: fill;
+  /* Stretch without preserving aspect ratio */
+  /* Center vertically */
+  z-index: 0;
+  will-change: transform;
+
+}
+
+.responsive-rectangle {
+  width: 80%;
+  height: 60%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.phrase-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  gap: 8px;
+  z-index: 1;
+}
+
+.phrase-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.phrase {
+  color: black;
+  text-align: left;
+  white-space: pre-wrap;
+  /* ← this makes \n work as a line break */
+  word-break: break-word;
+
+}
+
+.precedent-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.precedent-container {
+  width: 80%;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.precedent-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.precedent-label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.precedent-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.canvas-block {
+  width: 60%;
+  height: 400px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  background-color: #ccc;
+
+
+  border-radius: 14px;
+  outline: 10px solid rgba(255, 255, 255, 0.2);
+}
+
+#mapbox-container-1 {
+  position: relative;
+  height: 430px;
+  clip-path: inset(0px 0px 30px 0px);
+  margin-bottom: -24px;
+
+}
+
+
+
+/* Time slider styling */
+#time-slider-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 0px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+#time-slider-container input[type="range"] {
+  appearance: none;
+  width: 160px;
+  height: 2.5px;
+  background: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#time-slider-container input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  background: black;
+  border-radius: 50%;
+  border: none;
+}
+
+#time-slider-container input[type="range"]::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  background: black;
+  border-radius: 50%;
+  border: none;
+}
+
+#time-slider-container span {
+  font-weight: 500;
+  min-width: 20px;
+  text-align: center;
+}
+
+.mapboxgl-ctrl-scale {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.noise-image {
+  width: 60%;
+}
+
+.grasshopper-image {
+  width: 50%;
+  padding-top: 3%;
+  padding-right: 1%;
+}
+
+
+
+
+
+.diagram-image {
+  width: 80%;
+  height: auto;
+}
