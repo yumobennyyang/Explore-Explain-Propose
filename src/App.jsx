@@ -435,10 +435,10 @@ function App() {
           </h2>
 
           <div className="video-grid">
-            <video src="./public/sketchpad1.mp4" autoPlay loop muted playsInline className="video-1" />
-            <video src="./public/sketchpad2.mp4" autoPlay loop muted playsInline className="video-2" />
-            <video src="./public/sketchpad3.mp4" autoPlay loop muted playsInline className="video-3" />
-            <video src="./public/sketchpad4.mp4" autoPlay loop muted playsInline className="video-4" />
+            <video src="/sketchpad1.mp4" autoPlay loop muted playsInline className="video-1" />
+            <video src="/sketchpad2.mp4" autoPlay loop muted playsInline className="video-2" />
+            <video src="/sketchpad3.mp4" autoPlay loop muted playsInline className="video-3" />
+            <video src="/sketchpad4.mp4" autoPlay loop muted playsInline className="video-4" />
           </div>
 
         </div>
